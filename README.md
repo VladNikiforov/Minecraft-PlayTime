@@ -8,23 +8,14 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
    - You will need [NodeJS & NPM](https://nodejs.org/en/download/package-manager/current) installed on your computer.
 
 3. **How to use**
-   - On your terminal locate the folder
-   ```terminal
-   cd Minecraft-PlayTime
-   -
-   - More information on getting started with the API is available [here](https://developers.google.com/youtube/v3/getting-started).
-
-## Installation
-
-1. **Python Environment**
-   - Ensure Python is installed on your machine.
-   - Install required Python packages using the following command:
-
-   
-   
+    - On your terminal locate the folder
+        ```terminal
+        cd Minecraft-PlayTime
+    - Run the file
+        ```terminal
+        node mcplaytime.js
+    - Copy the array in the terminal
+    - Paste it in renderChart.js
+    - This explanation is trash honestly
 
 
-
-   
-  ```markdown
-  ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
