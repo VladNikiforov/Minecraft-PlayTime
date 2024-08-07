@@ -21,3 +21,9 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
    ```bash
    pip install google-api-python-client pandas isodate
+
+
+
+   
+  ```markdown
+  ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
