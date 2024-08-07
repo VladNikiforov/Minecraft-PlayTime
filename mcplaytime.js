@@ -40,7 +40,6 @@ files.forEach((file) => {
 
 allLogs = allLogs.filter((subArray) => !Number.isNaN(subArray[1]) && subArray[1] !== 0)
 
-console.log(allLogs)
 const combineDuplicates = (dataArray) => {
   const combinedData = {}
 
