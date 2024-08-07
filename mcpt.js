@@ -40,6 +40,7 @@ files.forEach((file) => {
 
 allLogs = allLogs.filter((subArray) => !Number.isNaN(subArray[1]) && subArray[1] !== 0)
 
+console.log(allLogs)
 const combineDuplicates = (dataArray) => {
   const combinedData = {}
 
@@ -57,12 +58,13 @@ const combineDuplicates = (dataArray) => {
 }
 
 allLogs = combineDuplicates(allLogs)
+
+const totalPlayTime = allLogs.reduce((sum, entry) => sum + entry[1], 0)
+
 allLogs.unshift(['Date', 'Minutes'])
 
 console.log('COPY DATA HERE:')
 console.dir(allLogs, { depth: null, maxArrayLength: null })
-
-const totalPlayTime = allLogs.reduce((num1, num2) => num1[1] + num2[1], 0)
 
 console.log(`Estimated PlayTime: ${Math.floor(totalPlayTime / 60)} hours and ${totalPlayTime % 60} minutes`)
 
