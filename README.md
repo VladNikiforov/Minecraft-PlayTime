@@ -4,9 +4,9 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
 ## How to use
 
-1. **Downlaod NodeJS**
+1. **Set up**
    - Download the code
-   - Download [NodeJS]([https://takeout.google.com/](https://nodejs.org/en/download/package-manager/current)) if you don't have it.
+   - Download [NodeJS]([https://takeout.google.com/](https://nodejs.org/en/download/package-manager/current)) 
    - 
 
 3. **Google YouTube API Key**
@@ -19,7 +19,7 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
    - Ensure Python is installed on your machine.
    - Install required Python packages using the following command:
 
-   ```bash
+   ```terminal
    pip install google-api-python-client pandas isodate
 
 
