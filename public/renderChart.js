@@ -19,9 +19,8 @@ function drawChart(data) {
   let passData = google.visualization.arrayToDataTable(data)
 
   let options = {
-    title: 'Minecraft PlayTime',
-    hAxis: { title: 'Timeline', titleTextStyle: { color: '#333' } },
-    vAxis: { minValue: 0, title: 'Minutes' },
+    hAxis: { title: 'Timeline', titleTextStyle: { color: '#333' }, textPosition: 'none' },
+    vAxis: { minValue: 0 },
   }
 
   let chart = new google.visualization.AreaChart(document.getElementById('chart_div'))
