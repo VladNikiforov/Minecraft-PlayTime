@@ -72,17 +72,4 @@ const start = new Date(allLogs[1][0])
 const dayDiffrence = (new Date() - start) / (1000 * 60 * 60 * 24)
 console.log(`Average playtime since the downloading of the game ${Math.round(totalPlayTime / dayDiffrence)} mins/day`)
 
-const express = require('express')
-
-const app = express()
-const PORT = 3000
-
-app.use(express.static('public'))
-
-app.get('/data', (req, res) => {
-  res.json(allLogs)
-})
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`)
-})
+module.exports = allLogs

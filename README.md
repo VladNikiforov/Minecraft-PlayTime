@@ -13,7 +13,7 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
         cd Minecraft-PlayTime
     - Run the file
         ```terminal
-        node mcplaytime.js
+        node server.js
     - Open the web-app on
         ```terminal
         http://localhost:3000
