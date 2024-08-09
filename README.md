@@ -21,3 +21,4 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
      ```terminal
      http://localhost:3000
      ```
+      and refresh the website

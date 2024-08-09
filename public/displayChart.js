@@ -41,9 +41,12 @@ function drawChart(data) {
   let displayData = google.visualization.arrayToDataTable(data)
 
   let options = {
+    backgroundColor: '#272727',
+    titleColor: '#fff',
     title: 'Your Minecraft PlayTime',
-    hAxis: { title: 'Timeline', titleTextStyle: { color: '#333' }, textPosition: 'none' },
-    vAxis: { minValue: 0 },
+    hAxis: { title: 'Timeline', titleTextStyle: { color: '#fff' }, textPosition: 'none' },
+    vAxis: { minValue: 0, textColor: '#fff' },
+    legend: 'none',
   }
 
   let chart = new google.visualization.AreaChart(document.getElementById('chart_div'))

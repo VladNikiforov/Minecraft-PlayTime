@@ -1,3 +1,9 @@
 body {
+  background-color: #272727;
+  color: #fff;
   font-family: Arial, sans-serif;
+}
+
+#playtime-indays {
+  font-style: italic;
 }
