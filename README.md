@@ -29,5 +29,5 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
    - **Total PlayTime** shows the total time you spent playing Minecraft
    - **Average PlayTime** shows the average playtime, _collected through all log files_
    - **Average PlayTime** shows the average playtime, _according all days - also including the days you didn't log in_
-   - 
+     
    ![example-screenshot](./example-screenshot.png)
