@@ -58,18 +58,4 @@ const combineDuplicates = (dataArray) => {
 
 allLogs = combineDuplicates(allLogs)
 
-const totalPlayTime = allLogs.reduce((sum, entry) => sum + entry[1], 0)
-
-allLogs.unshift(['Date', 'Minutes'])
-
-console.log(`Estimated PlayTime: ${Math.floor(totalPlayTime / 60)} hours and ${totalPlayTime % 60} minutes`)
-
-const playTimeInDays = Math.floor(totalPlayTime / 60 / 24)
-console.log(`That's over ${playTimeInDays} days!`)
-console.log(`Average 'game day' playtime: ${Math.round(totalPlayTime / allLogs.length)} mins/day`)
-
-const start = new Date(allLogs[1][0])
-const dayDiffrence = (new Date() - start) / (1000 * 60 * 60 * 24)
-console.log(`Average playtime since the downloading of the game ${Math.round(totalPlayTime / dayDiffrence)} mins/day`)
-
 module.exports = allLogs
