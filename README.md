@@ -17,7 +17,7 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
      ```terminal
      node server.js
      ```
-   - Open the web-app on
+   - Open the web-server on
      ```terminal
      http://localhost:3000
      ```
