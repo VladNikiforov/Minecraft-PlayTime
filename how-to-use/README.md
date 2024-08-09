@@ -2,7 +2,7 @@
 
 This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
-## How to use
+## Everything you need to know
 
 1. **Before we start**
 
