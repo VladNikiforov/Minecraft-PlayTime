@@ -10,7 +10,7 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
 2. **How to use**
 
-**_NOTE:_**  ```hello```
+**_NOTE:_**  Make sure to change `````` ```mcplaytime.js```
 
    - On your terminal locate the folder
      ```terminal
