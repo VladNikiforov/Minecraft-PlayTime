@@ -4,6 +4,7 @@ const zlib = require('zlib')
 
 let allLogs = []
 
+//Change this to yoyr actual path
 const logsDir = 'C:\\Users\\user\\AppData\\Roaming\\.minecraft\\logs'
 const files = fs.readdirSync(logsDir)
 
