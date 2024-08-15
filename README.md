@@ -10,7 +10,10 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
 2. **How to use**
 
-**_NOTE:_**  The note content.
+**_NOTE:_**  ```
+
+hello
+```
 
    - On your terminal locate the folder
      ```terminal
