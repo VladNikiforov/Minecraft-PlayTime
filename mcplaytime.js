@@ -4,7 +4,7 @@ const zlib = require('zlib')
 
 let allLogs = []
 
-const logsDir = 'C:\\Users\\user\\AppData\\Roaming\\.minecraft\\logs'
+const logsDir = 'C:\\Users\\Gamer\\AppData\\Roaming\\.minecraft\\logs'
 const files = fs.readdirSync(logsDir)
 
 files.forEach((file) => {

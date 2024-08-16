@@ -1,3 +1,22 @@
+google.charts.load('current', { packages: ['corechart'] })
+
+function drawChart(data) {
+  data.unshift(['Dates', 'Minutes'])
+  let displayData = google.visualization.arrayToDataTable(data)
+
+  let options = {
+    backgroundColor: '#272727',
+    titleColor: '#fff',
+    title: 'Your Minecraft PlayTime',
+    hAxis: { title: 'Timeline', titleTextStyle: { color: '#fff' }, textPosition: 'none' },
+    vAxis: { minValue: 0, textColor: '#fff' },
+    legend: 'none',
+  }
+
+  let chart = new google.visualization.AreaChart(document.getElementById('chart_div'))
+  chart.draw(displayData, options)
+}
+
 fetch('/data')
   .then((res) => {
     if (!res.ok) {
@@ -27,28 +46,8 @@ fetch('/data')
     average_playtime_alltime.textContent = `Average playtime (all time):
      ${Math.round(totalPlayTime / dayDiffrence)} mins/day`
 
-    drawChart(data)
+    google.charts.setOnLoadCallback(() => drawChart(data))
   })
   .catch((err) => {
     console.error('There was a problem with the fetch operation:', err)
   })
-
-google.charts.load('current', { packages: ['corechart'] })
-google.charts.setOnLoadCallback(drawChart)
-
-function drawChart(data) {
-  data.unshift(['Dates', 'Minutes'])
-  let displayData = google.visualization.arrayToDataTable(data)
-
-  let options = {
-    backgroundColor: '#272727',
-    titleColor: '#fff',
-    title: 'Your Minecraft PlayTime',
-    hAxis: { title: 'Timeline', titleTextStyle: { color: '#fff' }, textPosition: 'none' },
-    vAxis: { minValue: 0, textColor: '#fff' },
-    legend: 'none',
-  }
-
-  let chart = new google.visualization.AreaChart(document.getElementById('chart_div'))
-  chart.draw(displayData, options)
-}
