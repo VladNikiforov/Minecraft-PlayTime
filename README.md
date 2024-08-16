@@ -10,6 +10,8 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
 
 2. **How to use**
 
+   **_NOTE:_**  Make sure to change the ```logsDir``` const from ```mcplaytime.js``` to your actual file path to the .minecraft logs folder
+
    - On your terminal locate the folder
      ```terminal
      cd Minecraft-PlayTime
@@ -18,7 +20,7 @@ This web-app shows you how many hours you spent playing Minecraft JavaEdition
      ```terminal
      node server.js
      ```
-   - Open the web-server on
+   - Open on
      ```terminal
      http://localhost:3000
      ```
