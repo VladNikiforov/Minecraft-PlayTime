@@ -4,14 +4,10 @@ const zlib = require('zlib')
 
 let allLogs = []
 
-<<<<<<< HEAD
-const logsDir = 'C:\\Users\\Gamer\\AppData\\Roaming\\.minecraft\\logs'
-=======
-//Change this to yoyr actual path
+//Change this to your actual file path
 const logsDir = 'C:\\Users\\user\\AppData\\Roaming\\.minecraft\\logs'
->>>>>>> 8eb2e8c3bc421175443f8ee048facaa1b638fcd3
-const files = fs.readdirSync(logsDir)
 
+const files = fs.readdirSync(logsDir)
 files.forEach((file) => {
   const filePath = path.join(logsDir, file)
 
