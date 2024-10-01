@@ -4,7 +4,6 @@ const zlib = require('zlib')
 
 let allLogs = []
 
-//Change this to your actual file path
 const logsDir = 'C:\\Users\\user\\AppData\\Roaming\\.minecraft\\logs'
 
 const files = fs.readdirSync(logsDir)
@@ -31,7 +30,7 @@ files.forEach((file) => {
 
         file = file.replace('.log.gz', '')
 
-        allLogs.push([file, playTime])
+        allLogs.push({ date: file, time: playTime })
       }
     } catch (error) {
       console.error(`Error processing file ${file}:`, error.message)
@@ -39,22 +38,22 @@ files.forEach((file) => {
   }
 })
 
-allLogs = allLogs.filter((subArray) => !Number.isNaN(subArray[1]) && subArray[1] !== 0)
+allLogs = allLogs.filter((log) => !Number.isNaN(log.time) && log.time !== 0)
 
 const combineDuplicates = (dataArray) => {
   const combinedData = {}
 
-  dataArray.forEach(([date, value]) => {
+  dataArray.forEach(({ date, time }) => {
     date = date.split('-').slice(0, 3).join('-')
 
     if (combinedData[date]) {
-      combinedData[date] += value
+      combinedData[date] += time
     } else {
-      combinedData[date] = value
+      combinedData[date] = time
     }
   })
 
-  return Object.entries(combinedData)
+  return Object.entries(combinedData).map(([date, time]) => ({ date, time }))
 }
 
 allLogs = combineDuplicates(allLogs)
