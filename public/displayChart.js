@@ -43,8 +43,8 @@ fetch('/data')
           {
             label: 'Playtime',
             data: data.map((d) => d.time),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: '#36a2eb33',
+            borderColor: '#36a2eb',
             borderWidth: 1,
           },
         ],
